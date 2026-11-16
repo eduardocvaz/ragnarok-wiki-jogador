@@ -1,0 +1,84 @@
+/* [integra] Wiki do jogador no visual MagnusRO (itens 242/247): azul-real noturno + dourado, como o site do cadastro. */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap");
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 225;
+  --md-default-bg-color: #0a1028;
+  --md-default-fg-color: #ece6d6;
+  --md-default-fg-color--light: #b3ab98;
+  --md-primary-fg-color: #12204a;
+  --md-primary-fg-color--light: #1c2f66;
+  --md-primary-fg-color--dark: #0b1430;
+  --md-primary-bg-color: #f6d68c;
+  --md-primary-bg-color--light: #e0b456;
+  --md-accent-fg-color: #e0b456;
+  --md-accent-fg-color--transparent: rgba(224,180,86,.12);
+  --md-typeset-a-color: #8cc0ff;
+  --md-code-bg-color: #08102a;
+  --md-footer-bg-color: #0b1430;
+  --md-footer-bg-color--dark: #08102a;
+  --magnus-borda: #2c3d78;
+  --magnus-ouro: #e0b456;
+  --magnus-ouro2: #f6d68c;
+  --magnus-painel: #12204a;
+}
+body { background: radial-gradient(70rem 30rem at 50% -10rem, #1f4aa8 0%, transparent 70%) no-repeat, var(--md-default-bg-color); }
+.md-header { background: linear-gradient(180deg, #13245a, #0b1430); box-shadow: 0 2px 12px rgba(0,0,0,.45); border-bottom: 1px solid #3b4f8f; }
+.md-header__button.md-logo img { height: 2.2rem; width: auto; filter: drop-shadow(0 2px 8px rgba(80,140,255,.45)); }
+.md-header__title { font-family: "Cinzel", Georgia, serif; font-weight: 700; letter-spacing: .03em; }
+.md-tabs { background: #0b1430; }
+
+/* largura (item 247): grade larga; texto corrido com limite de leitura; tabela usa tudo */
+.md-grid { max-width: min(1440px, 96vw); }
+.md-typeset > p, .md-typeset > ul, .md-typeset > ol, .md-typeset > blockquote, .md-typeset > dl { max-width: 52rem; }
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3 { font-family: "Cinzel", Georgia, serif; color: var(--magnus-ouro2); letter-spacing: .02em; }
+.md-typeset h1 { font-weight: 800; }
+.md-typeset h2 { border-bottom: 1px solid var(--magnus-borda); padding-bottom: .25em; }
+.md-typeset h3, .md-typeset h4 { color: var(--magnus-ouro); }
+.md-nav__title { color: var(--magnus-ouro); }
+.md-nav__item--section > .md-nav__link { color: var(--magnus-ouro) !important; font-family: "Cinzel", Georgia, serif; }
+.md-nav__link--active { color: var(--magnus-ouro2) !important; font-weight: 700; }
+.md-typeset blockquote { border-left-color: var(--magnus-ouro); background: rgba(224,180,86,.07); color: var(--md-default-fg-color); padding: .4em 1em; border-radius: 0 8px 8px 0; }
+.md-typeset hr { border-color: var(--magnus-borda); }
+
+/* tabelas: largura toda, legíveis, roláveis no celular (o Material já envolve em .md-typeset__scrollwrap) */
+.md-typeset__table { width: 100%; }
+.md-typeset__table table:not([class]) { display: table; width: 100%; border: 1px solid var(--magnus-borda); border-radius: 10px; overflow: hidden; font-size: .78rem; }
+.md-typeset table:not([class]) th { background: rgba(224,180,86,.14); color: var(--magnus-ouro2); white-space: nowrap; }
+.md-typeset table:not([class]) td { border-top-color: #22305f; }
+.md-typeset table:not([class]) tbody tr:nth-child(even) { background: rgba(255,255,255,.025); }
+
+/* imagens: pixel art nítida; ícone de habilidade (24 px) em dobro; várias imagens seguidas = galeria */
+.md-typeset img[src*="img/"] { image-rendering: pixelated; }
+.md-typeset p > img[src*="img/"] { height: 48px; width: auto; vertical-align: middle; background: rgba(0,0,0,.35);
+  border: 1px solid var(--magnus-borda); border-radius: 10px; padding: 5px; box-sizing: content-box; margin: 0 .3rem .3rem 0; }
+.md-typeset p:has(> img + img) { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.md-typeset figure { display: inline-flex; flex-direction: column; align-items: center; margin: .4rem .6rem .8rem 0; padding: .7rem .8rem .5rem;
+  background: rgba(0,0,0,.28); border: 1px solid var(--magnus-borda); border-radius: 12px; max-width: 100%; vertical-align: top; }
+.md-typeset figure img { image-rendering: pixelated; max-width: 100%; }
+.md-typeset figcaption { margin-top: .4rem; color: var(--md-default-fg-color--light); font-size: .72rem; max-width: 14rem; text-align: center; }
+.md-typeset .galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: .7rem; }
+.md-typeset .galeria figure { margin: 0; display: flex; }
+
+/* página inicial (montada pelo scripts/wiki_nav.py) */
+.inicio-destaques { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: .8rem; margin: 1rem 0 1.4rem; }
+.inicio-destaques a, .inicio-novidades a { display: block; text-decoration: none; color: var(--md-default-fg-color) !important; border: 1px solid #3b4f8f;
+  border-radius: 12px; padding: .9rem 1.1rem; background: linear-gradient(160deg, rgba(31,74,168,.45), rgba(0,0,0,.25)); transition: border-color .15s, transform .15s; }
+.inicio-destaques a:hover, .inicio-novidades a:hover, .inicio ul li:hover { border-color: var(--magnus-ouro); transform: translateY(-2px); }
+.inicio-destaques strong { display: block; font-family: "Cinzel", Georgia, serif; color: var(--magnus-ouro2); font-size: 1rem; margin-bottom: .2rem; }
+.inicio-destaques span, .inicio-novidades span { color: var(--md-default-fg-color--light); font-size: .74rem; }
+.inicio-novidades { display: grid; gap: .6rem; margin-bottom: 1.2rem; }
+.inicio-novidades a { background: rgba(0,0,0,.22); border-left: 3px solid var(--magnus-ouro); border-radius: 0 10px 10px 0; }
+.inicio-novidades b { display: block; color: var(--magnus-ouro); font-size: .7rem; }
+.inicio-novidades strong { display: block; color: var(--magnus-ouro2); }
+.inicio ul { list-style: none; margin-left: 0 !important; padding: 0; display: grid !important; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: .7rem; max-width: none !important; }
+.inicio ul li { margin: 0 !important; border: 1px solid var(--magnus-borda); border-radius: 12px; padding: .7rem .9rem; background: rgba(0,0,0,.25);
+  color: var(--md-default-fg-color--light); font-size: .74rem; transition: border-color .15s, transform .15s; }
+.inicio ul li > p { margin: 0; }
+.inicio ul li > a:first-child, .inicio ul li > p:first-child > a:first-child { display: block; font-family: "Cinzel", Georgia, serif; font-weight: 700; color: var(--magnus-ouro2); font-size: .86rem; margin-bottom: .15rem; }
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset > p, .md-typeset > ul, .md-typeset > ol { max-width: none; }
+  .md-typeset p > img[src*="img/"] { height: 40px; }
+}
