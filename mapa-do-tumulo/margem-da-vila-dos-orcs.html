@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="../magnus/magnus.css">
     
+      <link rel="stylesheet" href="../css/cartao-item.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1392,11 +1394,35 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#como-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como é
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o-que-tem-la" class="md-nav__link">
     <span class="md-ellipsis">
       O que tem lá
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="O que tem lá">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-o-espelho-da" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que o espelho dá
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1791,11 +1817,35 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#como-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como é
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o-que-tem-la" class="md-nav__link">
     <span class="md-ellipsis">
       O que tem lá
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="O que tem lá">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-o-espelho-da" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que o espelho dá
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1816,6 +1866,7 @@
 
 
 <h1 id="margem-da-vila-dos-orcs-em-breve">Margem da Vila dos Orcs (em breve)<a class="headerlink" href="#margem-da-vila-dos-orcs-em-breve" title="Permanent link">&para;</a></h1>
+<p><link rel="stylesheet" href="../css/cartao-item.css"></p>
 <blockquote>
 <p><strong>Em breve:</strong> o Mapa do Túmulo está <strong>em teste</strong> e ainda não chegou ao
 servidor dos amigos. Nomes e números podem mudar.</p>
@@ -1831,16 +1882,181 @@ servidor dos amigos. Nomes e números podem mudar.</p>
 <li><strong>Quem entra:</strong> qualquer jogador a partir do <strong>nível de base 55</strong>,
   sozinho ou em grupo. Pode entrar de novo enquanto estiver aberta.</li>
 </ul>
+<h2 id="como-e">Como é<a class="headerlink" href="#como-e" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Orc Hero</th>
+<th>Heroi Orc da Margem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Orc Hero" class="monstro" src="../img/mapa-do-tumulo/30135-original.png" /></td>
+<td><img alt="Heroi Orc da Margem" class="monstro" src="../img/mapa-do-tumulo/30135.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Os monstros da Margem (os que só aparecem invocados pelo chefe também):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Orc Lady da Margem" class="monstro" src="../img/mapa-do-tumulo/30136.png" /><br>Orc Lady da Margem</td>
+<td><img alt="Orc Warrior da Margem" class="monstro" src="../img/mapa-do-tumulo/30137.png" /><br>Orc Warrior da Margem</td>
+<td><img alt="Orc Archer da Margem" class="monstro" src="../img/mapa-do-tumulo/30138.png" /><br>Orc Archer da Margem</td>
+</tr>
+<tr>
+<td><img alt="High Orc da Margem" class="monstro" src="../img/mapa-do-tumulo/30139.png" /><br>High Orc da Margem</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- IMAGENS (item 300): a foto do mapa entra quando o QA mandar os prints de verdade. -->
+
 <h2 id="o-que-tem-la">O que tem lá<a class="headerlink" href="#o-que-tem-la" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Os monstros do mapa, <strong>mais fortes</strong>, como fantasmas azul-espectrais com
   brilho e maiores.</li>
-<li><strong>Heroi Orc da Margem</strong>: o chefe espelho, uma vez por abertura. Ele solta peças do
-  <strong>Conjunto do Viajante</strong>.</li>
+<li><strong>Heroi Orc da Margem</strong>: o chefe espelho, uma vez por abertura.</li>
 </ul>
-<p>As <strong>tabelas completas</strong> (monstros, drops com a chance real, o chefe
-espelho e os status possíveis) vêm do arquivo que o servidor gera,
-<code>dados-margem-da-vila-dos-orcs.md</code>, nesta pasta. O link entra aqui quando o arquivo existir.</p>
+<h3 id="o-que-o-espelho-da">O que o espelho dá<a class="headerlink" href="#o-que-o-espelho-da" title="Permanent link">&para;</a></h3>
+<p>O espelho solta versões <strong>novas</strong> dos equipamentos do Orc Hero, com a base
+melhor e <strong>status sorteados</strong> (nenhum é igual ao outro). Cai sempre pelo
+menos um.</p>
+<table>
+<thead>
+<tr>
+<th>Original</th>
+<th>Versão da Margem</th>
+<th>Base</th>
+<th>Slots</th>
+<th>Chance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Light Epsilon</td>
+<td><strong>Light Epsilon da Margem</strong></td>
+<td>ATQ 180 → <strong>207</strong></td>
+<td>0 → <strong>1</strong></td>
+<td>3%</td>
+</tr>
+<tr>
+<td>Shield</td>
+<td><strong>Shield da Margem</strong></td>
+<td>DEF 6 → <strong>7</strong></td>
+<td>1</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>Orcish Sword</td>
+<td><strong>Orcish Sword da Margem</strong></td>
+<td>ATQ 90 → <strong>103</strong></td>
+<td>0 → <strong>1</strong></td>
+<td>20%</td>
+</tr>
+<tr>
+<td>Giant Axe</td>
+<td><strong>Giant Axe da Margem</strong></td>
+<td>ATQ 330 → <strong>379</strong></td>
+<td>1</td>
+<td>2%</td>
+</tr>
+</tbody>
+</table>
+<p>Os cartões abaixo mostram o item como o jogo mostra. A base e os slots
+da Margem são os da tabela acima; o sorteio dos status vem por cima.</p>
+<div class="cartao-item">
+  <div class="ci-titulo">Cruz Impiedosa da Margem</div>
+  <div class="ci-corpo">
+    <div class="ci-imagem"><img src="../img/item-col-30238.png" alt="Cruz Impiedosa da Margem"></div>
+    <div class="ci-desc">
+      <p>Machado cerimonial batizado pela igreja. Contém força sagrada.<br>
+      <span style="color:#a400cd">Indestrutível em batalha.</span><br>
+      <span style="color:#0000ff">Habilita [Curar] nv. 3.</span><br>
+      <span style="color:#0000ff">Dano físico contra a raça Demônio +3%.</span></p>
+      <p class="ci-linha"><span class="ci-rot">Tipo:</span> <span class="ci-val">Machado de Duas Mãos</span></p>
+      <p class="ci-linha"><span class="ci-rot">Ataque:</span> <span class="ci-val">180</span></p>
+      <p class="ci-linha"><span class="ci-rot">Peso:</span> <span class="ci-val">230</span></p>
+      <p class="ci-linha"><span class="ci-rot">Propriedade:</span> <span class="ci-val">Sagrado</span></p>
+      <p class="ci-linha"><span class="ci-rot">Nível da arma:</span> <span class="ci-val">4</span></p>
+      <p class="ci-linha"><span class="ci-rot">Nível necessário:</span> <span class="ci-val">44</span></p>
+      <p class="ci-linha"><span class="ci-rot">Classes:</span> <span class="ci-val">Espadachins, Mercadores e evoluções</span></p>
+      <p>Pode vir com efeitos aleatórios.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cartao-item">
+  <div class="ci-titulo">Escudo da Margem [1]</div>
+  <div class="ci-corpo">
+    <div class="ci-imagem"><img src="../img/item-col-30239.png" alt="Escudo da Margem"></div>
+    <div class="ci-desc">
+      <p>Escudo de fabricação precisa, quase impenetrável a ataques.</p>
+      <p class="ci-linha"><span class="ci-rot">Classe:</span> <span class="ci-val">Escudo</span></p>
+      <p class="ci-linha"><span class="ci-rot">Defesa:</span> <span class="ci-val">60</span></p>
+      <p class="ci-linha"><span class="ci-rot">Peso:</span> <span class="ci-val">130</span></p>
+      <p class="ci-linha"><span class="ci-rot">Classes:</span> <span class="ci-val">Espadachim e suas evoluções</span></p>
+      <p>Pode vir com efeitos aleatórios.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cartao-item">
+  <div class="ci-titulo">Espada Orc da Margem</div>
+  <div class="ci-corpo">
+    <div class="ci-imagem"><img src="../img/item-col-30240.png" alt="Espada Orc da Margem"></div>
+    <div class="ci-desc">
+      <p>Espada de uma mão produzida por ferreiros orcs e usada por Heróis orc. Simboliza o conflito dos orcs contra a opressão.</p>
+      <p><span style="color:#a400cd">Indestrutível em batalha.</span></p>
+      <p class="ci-linha"><span class="ci-rot">Tipo:</span> <span class="ci-val">Espada</span></p>
+      <p class="ci-linha"><span class="ci-rot">ATQ:</span> <span class="ci-val">90 ATQM: <span style="color:#777777">0</span></span></p>
+      <p class="ci-linha"><span class="ci-rot">Peso:</span> <span class="ci-val">80</span></p>
+      <p class="ci-linha"><span class="ci-rot">Nível da arma:</span> <span class="ci-val">3</span></p>
+      <p class="ci-linha"><span class="ci-rot">Nível necessário:</span> <span class="ci-val">5</span></p>
+      <p class="ci-linha"><span class="ci-rot">Classes:</span> <span class="ci-val">Aprendizes, Espadachins, Mercadores, Gatunos e evoluções</span></p>
+      <p>Pode vir com efeitos aleatórios.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cartao-item">
+  <div class="ci-titulo">Machado Gigante da Margem [1]</div>
+  <div class="ci-corpo">
+    <div class="ci-imagem"><img src="../img/item-col-30241.png" alt="Machado Gigante da Margem"></div>
+    <div class="ci-desc">
+      <p>Este machado gigante parece ser impossível de carregar e brandir.<br>
+      <span style="color:#a400cd">Indestrutível em batalha.</span><br>
+      <span style="color:#0000ff">Dano de [Choque do Carrinho] +15%.</span><br>
+      FOR base 95 ou mais:<br>
+      <span style="color:#0000ff">Precisão +10.</span><br>
+      <span style="color:#0000ff">Velocidade de ataque +3%.</span></p>
+      <p class="ci-linha"><span class="ci-rot">Tipo:</span> <span class="ci-val">Machado de Duas Mãos</span></p>
+      <p class="ci-linha"><span class="ci-rot">Ataque:</span> <span class="ci-val">330</span></p>
+      <p class="ci-linha"><span class="ci-rot">Peso:</span> <span class="ci-val">400</span></p>
+      <p class="ci-linha"><span class="ci-rot">Nível da arma:</span> <span class="ci-val">3</span></p>
+      <p class="ci-linha"><span class="ci-rot">Nível necessário:</span> <span class="ci-val">50</span></p>
+      <p class="ci-linha"><span class="ci-rot">Classes:</span> <span class="ci-val">Transcendentais de Espadachins, Mercadores e evoluções</span></p>
+      <p>Pode vir com efeitos aleatórios.</p>
+    </div>
+  </div>
+</div>
+
+<p>Tudo o que os outros monstros da Margem deixam cair também é <strong>"… da
+Margem"</strong>: etc. que valem 3× na venda, poções que curam mais e
+equipamentos com a base melhor e um status sorteado.</p>
+<p>As <strong>tabelas completas</strong> (monstros com vida, ataque e defesa, drops com a
+chance real e os status possíveis) estão em
+<a href="dados-margem-da-vila-dos-orcs.html">Dados da Margem de Vila dos Orcs</a>, feitas dos mesmos números que vão ao
+servidor.</p>
 
 
 

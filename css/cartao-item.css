@@ -1,0 +1,86 @@
+/* [design] Cartão de item no estilo da janela de descrição do jogo (item 305).
+   As cores do cartão são fixas, como no jogo: o cartão fica legível no tema claro e no escuro da wiki. */
+.cartao-item {
+  --ci-borda: #8a9bc2;
+  --ci-titulo-a: #dfe8fb;
+  --ci-titulo-b: #b9c9ee;
+  --ci-fundo: #ffffff;
+  --ci-texto: #000000;
+  --ci-rotulo: #777777;
+  max-width: 34rem;
+  margin: 1.2em 0;
+  border: 1px solid var(--ci-borda);
+  border-radius: 4px;
+  background: var(--ci-fundo);
+  color: var(--ci-texto);
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.cartao-item .ci-titulo {
+  background: linear-gradient(var(--ci-titulo-a), var(--ci-titulo-b));
+  border-bottom: 1px solid var(--ci-borda);
+  padding: 0.25em 0.6em;
+  font-weight: 600;
+  color: #000000;
+}
+.cartao-item .ci-corpo {
+  display: flex;
+  gap: 0.8em;
+  padding: 0.6em;
+}
+.cartao-item .ci-imagem {
+  flex: 0 0 75px;
+  width: 75px;
+  height: 100px;
+  border: 1px solid #c8d1e6;
+  background: #f4f6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.6rem;
+  color: var(--ci-rotulo);
+}
+.cartao-item .ci-imagem img {
+  max-width: 75px;
+  max-height: 100px;
+  image-rendering: pixelated;
+}
+.cartao-item .ci-desc p {
+  margin: 0 0 0.35em;
+}
+.cartao-item .ci-linha {
+  margin: 0;
+}
+.cartao-item .ci-rot {
+  color: var(--ci-texto);
+}
+.cartao-item .ci-val {
+  color: var(--ci-rotulo);
+}
+.cartao-item .ci-opcoes {
+  border-top: 1px dashed #c8d1e6;
+  padding: 0.5em 0.6em 0.6em;
+  background: #f7f9fd;
+}
+.cartao-item .ci-opcoes strong {
+  display: block;
+  margin-bottom: 0.2em;
+}
+.cartao-item .ci-opcoes ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+/* celular: a imagem passa para cima da descrição */
+@media (max-width: 30em) {
+  .cartao-item .ci-corpo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartao-item .ci-desc {
+    align-self: stretch;
+  }
+}
