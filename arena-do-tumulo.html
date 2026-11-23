@@ -2066,8 +2066,8 @@
 <h1 id="arena-do-tumulo-em-breve">Arena do Túmulo (em breve)<a class="headerlink" href="#arena-do-tumulo-em-breve" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p><strong>Em breve: em teste, ainda não está no servidor.</strong> As regras abaixo
-podem mudar até lá; os números marcados com "por exemplo" são os do
-teste.</p>
+podem mudar até lá. Os números sem "por exemplo" já foram conferidos
+no teste; os marcados com "por exemplo" ainda podem mudar.</p>
 </blockquote>
 <p>Uma <strong>luta de todos contra todos</strong> num campo grande: entre 4 e 16
 jogadores, cada um com o <strong>próprio personagem e o próprio equipamento</strong>,
@@ -2080,13 +2080,13 @@ nem itens.</p>
 <ul>
 <li>Fale com o NPC <strong>Arena do Túmulo</strong> em <strong>Prontera (156, 187)</strong>.</li>
 <li>Precisa de <strong>nível de base 50</strong> ou mais.</li>
-<li>Entre na <strong>fila</strong>. Com <strong>4 ou mais</strong> na fila, começa uma contagem curta;
-  com <strong>16</strong>, a partida começa na hora. Um anúncio diz a todos quantos
+<li>Entre na <strong>fila</strong>. Com <strong>4 ou mais</strong> na fila, começa uma contagem de
+  <strong>90 segundos</strong>; com <strong>16</strong>, a partida começa na hora. Um anúncio diz a todos quantos
   estão na fila.</li>
 <li>Você cai num ponto sorteado do campo, longe dos outros, com HP e SP
   cheios. <strong>Os buffs de antes não vêm junto.</strong></li>
-<li>Nos primeiros segundos ninguém pode atacar ninguém; depois aparece
-  <strong>"Valendo!"</strong>.</li>
+<li>Nos primeiros <strong>15 segundos</strong> ninguém pode atacar ninguém; depois
+  aparece <strong>"Valendo!"</strong>.</li>
 </ul>
 <h2 id="o-poder">O Poder<a class="headerlink" href="#o-poder" title="Permanent link">&para;</a></h2>
 <p>Ao entrar, você ganha o status <strong>Poder</strong>, que aparece com um ícone e a
@@ -2097,7 +2097,8 @@ porcentagem.</p>
 <li>O Poder <strong>sobe em degraus</strong> até <strong>100%</strong>, que é a sua força de
   verdade. Quem é mais forte fora da Arena chega mais longe nos degraus
   finais; no começo, todos são iguais.</li>
-<li>O Poder sobe com <strong>Fragmentos de Poder</strong>, que você acha:</li>
+<li>O Poder sobe com <strong>Fragmentos de Poder</strong> (o primeiro leva de 10% a
+  <strong>25%</strong>), que você acha:</li>
 <li>no <strong>chão</strong> e nos <strong>baús</strong> do mapa;</li>
 <li><strong>caçando os monstros</strong> do campo (um Fragmento a cada tantos monstros,
     por exemplo 5);</li>
@@ -2105,7 +2106,8 @@ porcentagem.</p>
     centro da zona;</li>
 <li><strong>derrotando outro jogador</strong>.</li>
 <li>O Poder some quando você sai da Arena. Trocar de equipamento lá dentro
-  não muda a conta: vale o que você usava ao entrar.</li>
+  não dá vantagem: a conta é refeita e fica igual à de quem já entrou com
+  aquele equipamento.</li>
 </ul>
 <h2 id="o-que-se-acha-no-mapa">O que se acha no mapa<a class="headerlink" href="#o-que-se-acha-no-mapa" title="Permanent link">&para;</a></h2>
 <p>Clique no objeto: o efeito vem na hora, nada vai para o inventário.</p>
@@ -2143,22 +2145,32 @@ porcentagem.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Baús por cor:</strong> os <strong>azuis</strong> são os mais comuns; os <strong>roxos</strong> sempre têm
+<p><strong>Baús por cor</strong> (azul, roxo com estrela, dourado com estrela): os <strong>azuis</strong> são os mais comuns; os <strong>roxos</strong> sempre têm
 um Fragmento; os <strong>dourados</strong> ficam perto da borda da zona (mais risco,
 mais prêmio). No meio da partida aparece um <strong>Baú Real</strong>, marcado no
-minimapa de todos: o melhor prêmio do mapa, e todo mundo sabe onde está.</p>
+minimapa de todos com uma <strong>cruz dourada</strong>: o melhor prêmio do mapa, e
+todo mundo sabe onde está.</p>
 <h2 id="a-nevoa">A névoa<a class="headerlink" href="#a-nevoa" title="Permanent link">&para;</a></h2>
-<p>O espaço seguro é um <strong>quadrado</strong> que <strong>fecha de tempos em tempos</strong>. Fora
-dele fica a <strong>névoa</strong>, e é ela que faz os jogadores se encontrarem.</p>
+<p>A zona segura <strong>começa do tamanho do mapa inteiro</strong> e <strong>fecha de tempos
+em tempos</strong>, até sobrar um quadrado pequeno (por exemplo, 8 fechamentos:
+o 1º aos 2 minutos e depois um a cada minuto e meio). Fora dela fica a
+<strong>névoa</strong>, e é ela que faz os jogadores se encontrarem.</p>
 <ul>
-<li><strong>Marcas brancas</strong> no minimapa mostram os cantos da zona segura de agora.</li>
-<li><strong>Marcas vermelhas</strong> aparecem um pouco antes de fechar e mostram <strong>para
-  onde a zona vai</strong>. Há também um aviso no chat.</li>
-<li>Na borda, uma <strong>parede de fumaça</strong> mostra o limite de perto.</li>
-<li><strong>Fora da zona você perde HP sem parar</strong> (por exemplo, 10% do HP a cada
-  2 segundos), e a névoa mata. No fim da partida ela dói ainda mais.</li>
-<li>Quem está na névoa ouve um alerta e recebe no chat a <strong>direção e a
-  distância</strong> da zona segura ("ao nordeste, ~40 células").</li>
+<li>Um <strong>contorno branco</strong> no minimapa mostra a zona segura de agora.</li>
+<li>Um <strong>contorno vermelho</strong> aparece logo depois de cada fechamento e mostra
+  <strong>para onde a zona vai</strong>. Antes de fechar, um aviso no chat: <em>"A zona
+  fecha em 15 segundos."</em></li>
+<li>No chão, uma <strong>parede de nuvens brancas</strong> marca o limite, sem buracos
+  perto de você.</li>
+<li><strong>Fora da zona você perde HP sem parar</strong>, e a névoa mata. O dano
+  <strong>cresce a cada fechamento</strong> e <strong>cresce enquanto você fica lá dentro</strong>:
+  no começo da partida ele sobe de 2 em 2% do HP a cada 10 segundos
+  seguidos na névoa (por exemplo, 6% → 8% → 10% do HP a cada 2
+  segundos). Sair da névoa zera essa conta.</li>
+<li><strong>Dentro da névoa toda cura vale menos</strong> (por exemplo, a metade).</li>
+<li>Quem está na névoa ouve um alerta, vê o aviso no topo da tela e recebe
+  no chat a <strong>direção e a distância</strong> da zona segura ("ao nordeste, ~40
+  células").</li>
 </ul>
 <h2 id="o-que-e-proibido">O que é proibido<a class="headerlink" href="#o-que-e-proibido" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2179,7 +2191,7 @@ dele fica a <strong>névoa</strong>, e é ela que faz os jogadores se encontrare
   <strong>mais abates</strong>; empatou, quem tiver mais HP.</li>
 </ul>
 <h2 id="premio">Prêmio<a class="headerlink" href="#premio" title="Permanent link">&para;</a></h2>
-<p>Moedas de Evento, entregues ao sair da partida. Por exemplo:</p>
+<p>Moedas de Evento, entregues ao sair da partida:</p>
 <table>
 <thead>
 <tr>
@@ -2210,6 +2222,8 @@ dele fica a <strong>névoa</strong>, e é ela que faz os jogadores se encontrare
 </tr>
 </tbody>
 </table>
+<p>O vencedor com 1 abate leva <strong>12 Moedas</strong>; o 2º lugar sem abate, <strong>7</strong>;
+o 3º, <strong>5</strong>; quem morre ou sai antes, <strong>1</strong> (mais 1 por abate).</p>
 
 
 
